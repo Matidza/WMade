@@ -1,0 +1,435 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>Wonderfully Made Properties.</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700,900|Oswald:400,700"> 
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
+  </head>
+  <body>
+    <div class="site-wrap">
+      <div class="site-navbar mt-4">
+          <div class="container py-1">
+              <div class="row align-items-center">
+                  <div class="col-8 col-md-8 col-lg-4">
+                      <h1 class="mb-0">
+                          <a href="{% url 'index' %}" class="text-white h2 mb-0">
+                              <strong>
+                                  WonderFully Made 
+                                  <span class="text-primary">
+                                      Properties.
+                                  </span>
+                              </strong>
+                          </a>
+                      </h1>
+                  </div>
+                  <div class="col-4 col-md-4 col-lg-8">
+                      <nav class="site-navigation text-right text-md-right" role="navigation">
+
+                          <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3">
+                              <a href="#" class="site-menu-toggle js-menu-toggle text-white">
+                                  <span class="icon-menu h3">
+
+                                  </span>
+                              </a>
+                          </div>
+
+                          <ul class="site-menu js-clone-nav d-none d-lg-block">
+                              <li class="active">
+                                  <a href="{% url 'index' %}">Home</a>
+                              </li>
+                              <li >
+                                  <a href="#feat"  onclick="event.preventDefault(); 
+                                      document.querySelector('#feat').
+                                      scrollIntoView({ behavior: 'smooth' });">
+                                      Amenities
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#ff"  href="#ff"  onclick="event.preventDefault(); 
+                                      document.querySelector('#ff').
+                                      scrollIntoView({ behavior: 'smooth' });">
+                                      News
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#fea" onclick="event.preventDefault(); 
+                                      document.querySelector('#fea')
+                                      .scrollIntoView({ behavior: 'smooth' });">
+                                      Contact
+                                  </a>
+                              </li>
+                          </ul>
+                      </nav>
+                  </div>
+              </div>
+          </div>
+      </div>
+           
+      <div class="site-mobile-menu">
+          <div class="site-mobile-menu-header">
+              <div class="site-mobile-menu-close mt-3">
+                  <span class="icon-close2 js-menu-toggle"></span>
+              </div>
+          </div>
+          <div class="site-mobile-menu-body"></div>
+      </div> <!-- .site-mobile-menu -->
+      <div class="site-blocks-cover overlay" style="background-image: 
+          url({% static 'images/hero_bg_2.jpg' %});" data-aos="fade" 
+          data-stellar-background-ratio="0.5" data-aos="fade">
+          <div class="container">
+              <div class="row align-items-center justify-content-center">
+                  <div class="col-md-8 text-center" data-aos="fade-up" data-aos-delay="400">
+                      <br><br>
+                      <h1 class="mb-1" style="font-size: 50px; margin-top: -45px;">
+                          Excellent Space For Your Next Home
+                      </h1>
+                      <p class="mb-4">11 Ganymede Ave Bedworth Park, Vereeniging, Gauteng</p>
+                      <p>
+                          <a href="#features" class="btn btn-primary px-5 py-3 me-sm-3" 
+                              onclick="event.preventDefault(); document.querySelector('#features').
+                              scrollIntoView({ behavior: 'smooth' });">
+                              Take a Tour
+                          </a>
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="container" id="features">
+        <div class="featured-property-half d-flex">
+          <div class="image" style="background-image: url({% static 'images/base.jpeg' %})"></div>
+          <div class="text">
+            
+            <h2>Property Information</h2>
+            <p class="mb-5">
+              Enjoy the perfect blend of comfort 
+              and convenience in our two-bedroom 
+              rental house, featuring:
+            </p>
+            <ul class=" mb-5">
+                <li>Bright and airy living areas</li>
+                <li>Well-appointed kitchen with all the essentials</li>
+                <li>Two generously-sized bedrooms with plenty of closet space</li>
+                <li>Modern bathroom with fresh towels and toiletries</li>
+                <li>Private yard for outdoor entertaining</li>
+              </ul>
+              
+            <ul class="property-list-details mb-5">
+              <li class="text-black">Property Name: <strong class="text-black">Marga Luxury Suite</strong></li>
+              <li>Room: <strong>2</strong></li>
+              <li>Total Area: <strong>482 Square Feets</strong></li>
+              <li>Category: <strong>Modern House</strong></li>
+              <li>Vaccancy:<strong> Available</strong></li>
+            </ul>
+            <br>
+            <p>
+              <a href="#feature" class="btn btn-primary px-4 py-3" onclick="event.preventDefault(); document.querySelector('#feature').scrollIntoView({ behavior: 'smooth' });">
+                Get Details
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-section">
+        <div class="container" id="feature">
+          <div class="row">
+            <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
+              <h2 class="mb-5">Browse The House</h2>
+              <p>
+                  Lets explore a relaxed style in our charming two-bedroom house
+              </p>
+            </div>
+          </div>
+          <div class="row" >
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+              <a href="{% static 'images/base.jpeg' %}" class="unit-9" style="max-width: 400px; max-height: 400px;">
+                <div class="image" style="background-image: url({% static 'images/base.jpeg' %});"></div>
+                <div class="unit-9-content">
+                  <h2>Kitchen</h2>
+                  
+                  
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+              <a href="{% static 'images/base5.jpeg' %}" class="unit-9">
+                <div class="image" style="background-image: url({% static 'images/base5.jpeg' %});"></div>
+                <div class="unit-9-content">
+                  <h2>Bathroom</h2>
+                  
+                </div>
+              </a>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+              <a href="{% static 'images/base4.jpeg' %}" class="unit-9">
+                <div class="image" style="background-image: url({% static 'images/base4.jpeg' %});"></div>
+                <div class="unit-9-content">
+                  <h2>Bedroom</h2>
+                
+                </div>
+              </a>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+              <a href="{% static 'images/base6.jpeg' %}" class="unit-9">
+                <div class="image" style="background-image: url({% static 'images/base6.jpeg' %});"></div>
+                <div class="unit-9-content">
+                  <h2>Shower</h2>
+                  <!--
+                  <span></span>-->
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-12 text-center mt-5" data-aos="fade-up">
+              <a href="#featt" 
+              onclick="event.preventDefault(); 
+              document.querySelector('#featt').
+              scrollIntoView({ behavior: 'smooth' });" 
+              class="btn btn-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-section">
+
+        <div class="container" id="featt">
+
+          <div class="row">
+            <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto" data-aos="fade-up">
+              <h2 class="mb-5" id="feat"  >Amenities</h2>
+              <p>
+                Experience the best of our community with our exceptional amenities, 
+                designed to enhance your lifestyle and provide endless opportunities
+                  for relaxation and entertainment.
+              </p>
+            </div>
+          </div>
+          
+          <div class="site-block-retro d-block d-md-flex">
+
+            <a href="#" class="col1 unit-9 no-height" data-aos="fade-up" data-aos-delay="100">
+              <div class="image" style="background-image: url({% static 'images/base4.jpeg' %});"></div>
+              <div class="unit-9-content">
+                <h2>Baltimore Apartment</h2>
+                
+              </div>
+            </a>
+
+            <div class="col2 ml-auto">
+
+              <a href="#" class="col2-row1 unit-9 no-height" data-aos="fade-up" data-aos-delay="200">
+                <div class="image" style="background-image: url({% static 'images/base6.jpeg' %});"></div>
+                <div class="unit-9-content">
+                  <h2>Austin Apartment</h2>
+                  
+                </div>
+              </a>
+
+              <a href="#" class="col2-row2 unit-9 no-height" data-aos="fade-up" data-aos-delay="300">
+                <div class="image" style="background-image: url({% static 'images/base3.jpeg' %});"></div>
+                <div class="unit-9-content">
+                  <h2>Atlanta Apartment</h2>
+                  
+                </div>
+              </a>
+
+            </div>
+
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="site-section bg-light">
+        <div class="container">
+          
+          
+          
+          <div class="row" id="ff">
+            <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto" data-aos="fade-up">
+              <h2 class="mb-5">New &amp; Future Listings</h2>
+              <p>Exciting new listings are coming soon! Be the first to know about our newest properties, carefully curated to meet your unique needs and preferences</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+              <a href="single.html"><img src="{% static 'images/img_4.jpg' %}" alt="Image" class="img-fluid"></a>
+              <div class="p-4 bg-white">
+                <span class="d-block text-secondary small text-uppercase">11 Jan , 2025</span>
+                <h2 class="h5 text-black mb-3"><a href="single.html">New Listing</a></h2>
+                
+              </div>
+            </div>
+          
+
+            <div class="col-md-6 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+              <a href="single.html"><img src="{% static 'images/img_2.jpg' %}" alt="Image" class="img-fluid"></a>
+              <div class="p-4 bg-white">
+                <span class="d-block text-secondary small text-uppercase">11 Jan , 2025</span>
+                <h2 class="h5 text-black mb-3"><a href="single.html">New Listing</a></h2>
+                
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+              <a href="single.html"><img src="{% static 'images/img_3.jpg' %}" alt="Image" class="img-fluid"></a>
+              <div class="p-4 bg-white">
+                <span class="d-block text-secondary small text-uppercase">11 Sep , 2025</span>
+                <h2 class="h5 text-black mb-3"><a href="single.html">Future Listing</a></h2>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+
+      <div class="bg-primary" data-aos="fade">
+        <div class="container">
+          <div class="row">
+            <center></center>
+            <a href="#" class="col-4 text-center py-4 social-icon d-block"><span class="icon-facebook text-white">facebook</span></a>
+            <a href="#" class="col-4 text-center py-4 social-icon d-block"><span class="icon-twitter text-white">twitter</span></a>
+            <a href="#" class="col-4 text-center py-4 social-icon d-block"><span class="icon-instagram text-white">instagram</span></a>
+            <!--  
+            <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-linkedin text-white"></span></a>
+            <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-pinterest text-white"></span></a>
+            <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-youtube text-white"></span></a>
+            -->
+          </div>
+        </div>
+      </div>
+
+      <footer class="site-footer" id="fea">
+          <div class="container">
+              <div class="row">              
+                  <div class="col-md-12 col-lg-7 mb-5">                       
+                      {% if fullname %}
+
+                      <center>
+                          <h1 class="mb-5">Thanks {{ fullname }}.</h1>
+                          <p class="mb-0">We recieved your email and will get bact to you shortly...</p>
+                      </center>
+
+                      <br><br>
+                      {% else %}
+
+                      <form action="{% url 'index' %}" class="contact-form" method="POST">
+                          {% csrf_token %}
+                          <div class="row form-group">
+                              <div class="col-md-12 mb-3 mb-md-0">
+                                  <label class="font-weight-bold" for="fullname">Full Name</label>
+                                  <input type="text" name="fullname" class="form-control" placeholder="Full Name">
+                              </div>
+                          </div>
+                          <div class="row form-group">
+                              <div class="col-md-12">
+                                  <label class="font-weight-bold" for="email">Subject</label>
+                                  <input type="text" name="subject" class="form-control" placeholder="Enter Subject">
+                              </div>
+                          </div>
+                          <div class="row form-group">
+                              <div class="col-md-12">
+                                  <label class="font-weight-bold" for="email">Email</label>
+                                  <input type="email" name="email" class="form-control" placeholder="Email Address">
+                              </div>
+                          </div>
+                          <!--  -->
+              
+              
+                          <div class="row form-group">
+                              <div class="col-md-12">
+                                  <label class="font-weight-bold" for="message">Message</label>
+                                  <textarea name="message" name="message" cols="30" rows="5" class="form-control"
+                                  placeholder="Say hello to us"></textarea>
+                              </div>
+                          </div>
+              
+                          <div class="row form-group">
+                              <div class="col-md-12">
+                                  <input type="submit" value="Send Message" class="btn btn-primary py-3 px-4">
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+                  <div class="col-lg-4 ml-auto">
+                      <div class="p-4 mb-3 bg-white">
+                          <h3 class="h5 text-black mb-3" >Contact Info</h3>
+                          
+                          <!--  <p class="mb-0 font-weight-bold text-black">Address</p>
+                          <p class="mb-0 text-black">203 Fake St. Mountain View, San Francisco, California, USA</p>
+                          <p class="mb-0 text-black">203 Fake St. Mountain View, San Francisco, California, USA</p>
+                          -->
+
+                          <br>
+
+                          <p class="mb-0 font-weight-bold text-black">Phone</p>
+                          <p class="mb-0">081 2335 996</p>
+                          <p class="mb-0">082 9597 522</p>
+
+                          <br>
+
+                          <p class="mb-0 font-weight-bold text-black">Email Address</p>
+                          <p class="mb-0"><a href="#">marymantombi@gmail.com</a></p>
+                          <p class="mb-0"><a href="#">leonardsindana@gmail.com</a></p>
+
+                      </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <div class="map_main">
+                        <div class="map-responsive">
+                            <iframe
+                                src=
+                                    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3563.
+                                    5609753875947!2d27.8797512!3d-26.726469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!
+                                    4f13.1!3m3!1m2!1s0x1e9458e7570a36e9%3A0x28a614c263aed044!2sNorth-West%20U
+                                    niversity%20Vaal%20Triangle%20Campus!5e0!3m2!1sen!2sza!4v1736476270299!5m2!1sen!2sza"
+                                    width="1200" height="500" frameborder="" style="border:0; width: 100%;"
+                                    allowfullscreen=""
+                                >
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+                  {% endif %}
+                  
+              </div>
+              
+              <div class="row pt-5 mt-5 text-center">
+                  <div class="col-md-12">
+                      <br><br><br>
+                      <p>
+                      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                      Copyright &copy; All rights reserved | This template is made with by 
+                      <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+                      | and reconfigured and structured by <a href="https://zwivhuyamukwevho.netlify.app/" target="_blank">Matidza</a> for 
+                      <a href="https://colorlib.com" target="_blank" > <a href="" target="_blank">Wonderfully Made Properties.</a> </a>
+                      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </footer>
+
+    </div>
+    <script data-cfasync="false" src="{% static '/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js' %}"></script>
+    <script>document.write(new Date().getFullYear());</script> 
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+  </body>
+</html>
