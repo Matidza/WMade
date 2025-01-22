@@ -15,8 +15,8 @@ SECRET_KEY = 'django-insecure-y(btj58hs*p8^lnb(t%4ia&3!*&jaf2jg!s^q%2(jojpd%z#^8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://wmade.onrender.com', 'http://127.0.0.1:5000/', 'wmade.onrender.com']
-CSRF_TRUSTED_ORIGINS = ['https://wmade.onrender.com', 'http://127.0.0.1:5000/', 'wmade.onrender.com']
+ALLOWED_HOSTS = [] #'https://wmade.onrender.com', 'http://127.0.0.1:5000/', 'wmade.onrender.com'
+#CSRF_TRUSTED_ORIGINS = ['https://wmade.onrender.com', 'http://127.0.0.1:5000/', 'wmade.onrender.com']
 
 
 # Application definition
@@ -28,7 +28,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'whitenoise.runserver_nostatic',
+    #'whitenoise.runserver_nostatic',
     'base',
 ]
 
@@ -40,7 +40,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
+    #'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'WMade.urls'
