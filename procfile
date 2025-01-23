@@ -1,3 +1,1 @@
-web : gunicorn WMade.wsgi --log-file
-web: python manage.py migrate && gunicorn WMade.wsgi
 web: python manage.py migrate && gunicorn WMade.wsgi:application --log-file -
