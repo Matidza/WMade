@@ -1,1 +1,1 @@
-web: gunicorn WMade.wsgi --bind 0.0.0.0:$PORT
+web: gunicorn base.wsgi --bind 0.0.0.0:$PORT
