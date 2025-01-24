@@ -1,2 +1,1 @@
-web: python manage.py migrate && gunicorn WMade.wsgi:application --log-file -
-
+web: gunicorn WMade.wsgi --bind 0.0.0.0:$PORT
